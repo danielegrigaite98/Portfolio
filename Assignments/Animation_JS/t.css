@@ -1,0 +1,582 @@
+
+
+body {
+    background-color: paleturquoise;
+}
+
+header {
+    font-family: rock;
+    font-size: 5vw;
+    text-align: center;
+    color: saddlebrown;
+
+}
+
+button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: pink;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px black;
+}
+
+.btn:focus,
+.btn:hover {
+    background-color: #666;
+    color: white;
+}
+
+.btn:active {
+  background-color: #666;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/**        //////////   ANIMATIONS  ///////////       **/
+
+#baby {
+    background-image: url("character-01-test-67-01.svg");
+    display: block;
+    height: 280px;
+    width: 169px;
+    background-size: cover;
+    transform: translateY(164px);
+}
+#babywrap {
+    display: block;
+    height: 280px;
+    width: 169px;
+}
+
+#baby.idle {
+    animation: idle 1s infinite steps(10);
+}
+
+#baby.fall {
+    animation: fall 0.7s steps(7);
+    animation-fill-mode: forwards;
+}
+
+#baby.jump {
+    animation: jump 0.7s ;
+    animation-direction:alternate;
+    animation-iteration-count: infinite;
+}
+
+#baby.spin {
+    animation: spin 1s;
+}
+
+#baby.jumpo {
+    animation: jump 0.7s ;
+    animation-direction:alternate;
+    animation-iteration-count: infinite;
+}
+
+#baby.shake {
+    animation: shake 1s infinite;
+}
+
+#baby.vanish {
+    animation: vanish 1.5s forwards;
+}
+
+#baby.fall {
+    animation: fall 2s;
+}
+
+#babywrap.shake {
+    animation: shake 0.2s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    animation-iteration-count:infinite ;
+}
+
+#babywrap.vanish {
+    animation: vanish 1.5s forwards;
+}
+
+#babywrap.spin {
+    animation: spin 2s linear infinite;
+}
+
+#babywrap.flip {
+    animation: flip 2s linear alternate;
+}
+
+#babywrap.zoomIn {
+   animation: zoomIn 1.5s;
+}
+
+#babywrap.zoomOut {
+   animation: zoomOut 1.5s;
+}
+
+#babywrap.roll {
+   animation: roll 2s linear;
+}
+
+/** KEYFRAMES **/
+@keyframes idle {
+   
+}
+
+@keyframes roll {
+    0% {
+        transform: translate3d(0,0,0) rotate(0deg);
+    }
+    25% {
+
+        transform: translate3d(100%,50%,0) rotate(90deg);
+    }
+    50% {
+
+        transform:  translate3d(200%,100%,0) rotate(180deg);
+    }
+    75% {
+        transform:  translate3d(200%,100%,0) rotate(270deg);
+    }
+    90% {
+         transform:  translate3d(200%,70%,0) rotate(320deg);
+    }
+    100% {
+
+        transform:  translate3d(100%,50%,0) rotate(360deg);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1.0) translate3d(0, 0, 0);
+    }
+    20% {
+        transform: scale(1.2) translate3d(0, -10%, 0);
+    }
+    40% {
+        transform: scale(1.4) translate3d(0, -20%, 0);
+    }
+    60% {
+        transform: scale(1.6) translate3d(0, -30%, 0);
+    }
+    80% {
+        transform: scale(1.8) translate3d(0, -40%, 0);
+    }
+    100% {
+        transform: scale(2.0) translate3d(0, -50%, 0);
+    }
+}
+
+@keyframes zoomOut{
+    0% {
+        transform: scale(1.0) translate3d(0, 0, 0);
+    }
+    20% {
+        transform: scale(0.8) translate3d(0, 10%, 0);
+    }
+    40% {
+        transform: scale(0.6) translate3d(0, 40%, 0);
+    }
+    60% {
+        transform: scale(0.4) translate3d(0, 100%, 0);
+    }
+    80% {
+        transform: scale(0.2) translate3d(0, 160%, 0);
+    }
+    100% {
+        transform: scale(0.2) translate3d(0, 160%, 0);
+    }
+}
+}
+
+@keyframes run {
+    to {
+        background-position: 2720px;
+    }
+}
+
+@keyframes fall {
+    to {
+        background-position: -2380px;
+    }
+
+}
+
+@keyframes jump {
+    0% {
+        transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    }
+
+    30% {
+        transform: translate3d(0, 10%, 0) scale3d(1.2, 1, 1);
+    }
+
+    50% {
+        transform: translate3d(0, 30%, 0) scale3d(1.2, 1, 1);
+    }
+
+    70% {
+        transform: translate3d(0, 50%, 0) scale3d(1.2, 1, 1);
+    }
+
+    100% {
+        transform: translate3d(0, 70%, 0) scale3d(1, 1, 1);
+    }
+}
+@keyframes fall {
+    0% {
+        transform: rotate(0);
+        transform-origin: bottom; left;
+        animation-timing-function: ease-in-out;
+    }
+
+    20%,
+    60% {
+        transform: rotate(80deg);
+        transform-origin: bottom left;
+        animation-timing-function: ease-in-out;
+    }
+
+    40% {
+        transform: rotate(60deg);
+        transform-origin: bottom left;
+        animation-timing-function: ease-in-out;
+    }
+}
+
+@keyframes spin {
+ 0% {
+        transform: scale(1) rotate3d(0, -1, 0, 0deg);
+    }
+
+    50% {
+        transform: scale(1) rotate3d(0, -1, 0, -90deg);
+    }
+
+    70% {
+        transform: scale(1) rotate3d(0, -1, 0, -180deg);
+    }
+
+    100% {
+        transform: scale(1) rotate3d(0, -1, 0, -360deg);
+    }
+}
+
+@keyframes dance {
+    to {
+        background-position: 1700px;
+    }
+}
+
+@keyframes move {
+    50% {
+        opacity: 1;
+        transform: translateX(60vw);
+    }
+    75%{
+        opacity: 0;
+        transform: translateX(60vw);
+    }
+    100%{
+        opacity: 0;
+        
+    }
+}
+
+@keyframes vanish {
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes shake {
+
+    2% {
+        transform: translate(5px, 7px) rotate(0.5deg);
+    }
+
+    4% {
+        transform: translate(5px, 9px) rotate(3.5deg);
+    }
+
+    6% {
+        transform: translate(-2px, -5px) rotate(3.5deg);
+    }
+
+    8% {
+        transform: translate(4px, 8px) rotate(-1.5deg);
+    }
+
+    10% {
+        transform: translate(2px, 9px) rotate(-0.5deg);
+    }
+
+    12% {
+        transform: translate(-5px, -4px) rotate(-2.5deg);
+    }
+
+    14% {
+        transform: translate(-6px, -1px) rotate(3.5deg);
+    }
+
+    16% {
+        transform: translate(-8px, 8px) rotate(2.5deg);
+    }
+
+    18% {
+        transform: translate(4px, 5px) rotate(-0.5deg);
+    }
+
+    20% {
+        transform: translate(3px, -3px) rotate(3.5deg);
+    }
+
+    22% {
+        transform: translate(0px, -6px) rotate(-1.5deg);
+    }
+
+    24% {
+        transform: translate(-6px, -6px) rotate(3.5deg);
+    }
+
+    26% {
+        transform: translate(-8px, -6px) rotate(0.5deg);
+    }
+
+    28% {
+        transform: translate(-3px, -6px) rotate(1.5deg);
+    }
+
+    30% {
+        transform: translate(7px, 8px) rotate(-1.5deg);
+    }
+
+    32% {
+        transform: translate(7px, 6px) rotate(2.5deg);
+    }
+
+    34% {
+        transform: translate(-7px, -7px) rotate(-2.5deg);
+    }
+
+    36% {
+        transform: translate(7px, 3px) rotate(-0.5deg);
+    }
+
+    38% {
+        transform: translate(-6px, -1px) rotate(3.5deg);
+    }
+
+    40% {
+        transform: translate(-3px, 4px) rotate(-0.5deg);
+    }
+
+    42% {
+        transform: translate(-1px, 10px) rotate(3.5deg);
+    }
+
+    44% {
+        transform: translate(9px, 3px) rotate(3.5deg);
+    }
+
+    46% {
+        transform: translate(-3px, 8px) rotate(-2.5deg);
+    }
+
+    48% {
+        transform: translate(-5px, 7px) rotate(3.5deg);
+    }
+
+    50% {
+        transform: translate(-9px, -5px) rotate(0.5deg);
+    }
+
+    52% {
+        transform: translate(2px, 4px) rotate(0.5deg);
+    }
+
+    54% {
+        transform: translate(2px, -9px) rotate(-2.5deg);
+    }
+
+    56% {
+        transform: translate(-2px, 9px) rotate(-1.5deg);
+    }
+
+    58% {
+        transform: translate(0px, 4px) rotate(0.5deg);
+    }
+
+    60% {
+        transform: translate(-6px, 10px) rotate(3.5deg);
+    }
+
+    62% {
+        transform: translate(-1px, 3px) rotate(2.5deg);
+    }
+
+    64% {
+        transform: translate(5px, -5px) rotate(0.5deg);
+    }
+
+    66% {
+        transform: translate(5px, 3px) rotate(3.5deg);
+    }
+
+    68% {
+        transform: translate(1px, -7px) rotate(-2.5deg);
+    }
+
+    70% {
+        transform: translate(7px, 3px) rotate(0.5deg);
+    }
+
+    72% {
+        transform: translate(-9px, -8px) rotate(-2.5deg);
+    }
+
+    74% {
+        transform: translate(9px, 10px) rotate(-1.5deg);
+    }
+
+    76% {
+        transform: translate(-1px, -7px) rotate(1.5deg);
+    }
+
+    78% {
+        transform: translate(-7px, -4px) rotate(-1.5deg);
+    }
+
+    80% {
+        transform: translate(8px, -3px) rotate(3.5deg);
+    }
+
+    82% {
+        transform: translate(9px, 5px) rotate(0.5deg);
+    }
+
+    84% {
+        transform: translate(-4px, -7px) rotate(1.5deg);
+    }
+
+    86% {
+        transform: translate(-7px, 9px) rotate(2.5deg);
+    }
+
+    88% {
+        transform: translate(0px, 10px) rotate(1.5deg);
+    }
+
+    90% {
+        transform: translate(7px, 4px) rotate(-2.5deg);
+    }
+
+    92% {
+        transform: translate(-9px, 10px) rotate(-1.5deg);
+    }
+
+    94% {
+        transform: translate(4px, -8px) rotate(0.5deg);
+    }
+
+    96% {
+        transform: translate(9px, 0px) rotate(1.5deg);
+    }
+
+    98% {
+        transform: translate(8px, -3px) rotate(1.5deg);
+    }
+
+    0%,
+    100% {
+        transform: translate(0, 0) rotate(0);
+    }
+}
+
+@keyframes flip {
+    0% {
+        transform: scale(1) rotate3d(1, 0, 0, 0deg);
+    }
+
+    50% {
+        transform: scale(0.8) rotate3d(1, 0, 0, -72deg);
+    }
+
+    70% {
+        transform: scale(0.6) rotate3d(1, 0, 0, -144deg);
+    }
+
+    90% {
+        transform: scale(0.8) rotate3d(1, 0, 0, -216deg);
+    }
+
+    100% {
+        transform: scale(1) rotate3d(1, 0, 0, -360deg);
+    }
+}
+
+#wrap {
+    border-color: hotpink;
+    border-style: solid;
+    border-width: 5px;
+    background-image: url("duckbackground.png");
+    height: 452px;
+/*    padding-left: calc(50% - 120px);*/
+}
+
+#wrap.walk {
+    animation: moveBg 2s linear;
+}
+
+#wrap.run {
+    animation: moveBg 2.5s infinite linear;
+}
+
+#wrap.jump {
+    animation: moveBg 2.5s infinite linear;
+}
+
+
+@keyframes moveBg {
+    to {
+        background-position: -600px;
+    }
+}
+
+svg {
+    width: 120vh;
+    height: 20vh;
+
+    transition: width 2s, height 2s, transform 2s;
+
+}
+
+.line {
+    fill: none;
+    stroke: black;
+    stroke-width: 1;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    transition: 1s linear;
+    
+}
+
+.draw {
+    stroke-dashoffset: 0;
+}
+
+.cls-1,
+.cls-2 {
+    fill: none;
+}
+
+
+
+.draw {
+    fill: blue;
+}
