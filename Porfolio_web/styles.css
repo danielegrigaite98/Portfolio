@@ -11,18 +11,20 @@
  h2 {
      color: grey;
  }
-h1 {
-    text-align: center;
-    font-size: 50px;
-}
-p {
-    padding:5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    font-size: 20px;
-}
 
- button {
+ h1 {
+     text-align: center;
+     font-size: 50px;
+ }
+
+ p {
+     padding: 5px;
+     margin-left: 5px;
+     margin-right: 5px;
+     font-size: 20px;
+ }
+
+ .button {
      background: black;
      border: none;
      color: white;
@@ -43,7 +45,7 @@ p {
  .features {
      background: white;
      color: gray;
-     padding:70px;
+     padding: 70px;
      display: flex;
      flex-direction: row;
  }
@@ -103,16 +105,17 @@ p {
      text-decoration: underline;
  }
 
-.canv {
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    top: 0;
-}
+ .canv {
+     position: absolute;
+     z-index: 1;
+     left: 0;
+     top: 0;
+ }
+
  header .logo a {
      position: relative;
      z-index: 2;
-     background-image: url("icon.svg");
+     background-image: url("icon_2.svg");
      display: inline-block;
      top: 50px;
      height: 150px;
@@ -129,69 +132,113 @@ p {
      color: black;
      font-size: 24px;
  }
-figcaption{
+
+ figcaption {
      color: black;
      font-size: 24px;
-}
-.portfolio_image {
-    max-width:90%;
-    height:375px;
-}
-.portfolio_image:hover {
-    background: #FFDDDD;
-    border-radius: 25px;
-}
-.theme_list {
-    list-style-type: none;
-}
-.theme {
-    height: 70px;
-    margin-left: 0.8em;
-    margin-bottom: 0.5em;
-    border-style: solid;
-    border-width: medium;
-    border-radius: 25px;
-    border-color: pink;
-    text-align: center;
-    position: relative;
-    transition: height 0.5s;
-    -webkit-transition: height 0.5s;
-    overflow: hidden;
+ }
+
+ .portfolio_image {
+     max-width: 90%;
+     height: 375px;
+ }
+
+ .portfolio_image:hover {
+     background: #FFDDDD;
+     border-radius: 25px;
+ }
+
+ .theme_list {}
+
+ .theme {
+     height: 70px;
+     margin-left: 0.8em;
+     margin-bottom: 0.5em;
+     border-style: solid;
+     border-width: medium;
+     border-radius: 25px;
+     border-color: pink;
+     text-align: justify;
+     transition: height 0.5s;
+     -webkit-transition: height 0.5s;
+     overflow: hidden;
+ }
+
+ .theme:hover {
+     height: 430px;
+ }
+
+ .column {
+     float: left;
+     width: 49%;
+ }
+
+ .row:after {
+     content: "";
+     display: table;
+     clear: both;
+ }
+
+ .myPicture {
+     display: flex;
+     justify-content: center;
+     margin-top: 40px;
+
+ }
+
+ .myText {
+     padding-bottom: 50px;
+     float: right;
+ }
+
+ @media only screen and (max-width: 800px) {
+     .myText {
+         float: none;
+     }
+ }
+
+ .project_name {
+     text-align: center;
+ }
+
+ .task_info {
+     margin-left: 15px;
+ }
+
+.picture {
+    margin-top: 20px;
+    width:35%;
     float: left;
-    width: 48%;
+}
+.web_button {
+    margin-left: 140px;
+    margin-top: 30px;
+    padding: 15px 32px;
 
 }
-.theme:hover {
-    height: 200px;
+.description {
+    float:right;
+    width: 64%;
 }
-.column {
-	float: left;
-	width: 49%;
+@media only screen and (max-width: 1020px) {
+     .picture {
+         width: 100%;
+     }
+    .scroll {
+        overflow: auto;
+    }
+    .description {
+        width: 100%;
+    }
+    
+ }
+ .project_image {
+     height: 200px;
+     width: 400px;
+     display: flex;
+     justify-content: center;
+
+ }
+.theme3_text{
+    font-size: 17px;
 }
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.myPicture {
-	display: flex;
-  	justify-content: center;
-	margin-top: 40px;
-
-}
-
-.myText {
-	padding-bottom: 50px;
-	float: right;
-}
-
-@media only screen and (max-width: 800px) {
-  .myText {
-	  float: none;
-  }
-}
-
-
-
-
