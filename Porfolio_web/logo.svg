@@ -1,0 +1,30 @@
+<svg width="200" height="66.6" xmlns="http://www.w3.org/2000/svg">
+ <style type="text/css">.st0{fill:#231F20;}
+	.st1{fill:#FFFFFF;}
+	.st2{font-family:'AndaleMono';}
+	.st3{font-size:60px;}
+	.st4{fill:none;stroke:#231F20;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}</style>
+
+ <title>icon</title>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_1">
+   <path id="svg_2" d="m70.800003,61.5" class="st0"/>
+  </g>
+  <g id="svg_3">
+   <text x="-13.0303" y="0.30303" id="svg_4" class="st1 st2 st3" transform="matrix(1, 0, 0, 1, 134.74, 53)">TI</text>
+   <text x="-12.42424" y="0.30303" id="svg_5" class="st4 st2 st3" transform="matrix(1, 0, 0, 1, 134.74, 53)">TI</text>
+   <text x="-13.0303" y="0.30303" id="svg_6" class="st1 st2 st3" transform="matrix(1, 0, 0, 1, 20.74, 53)">MU</text>
+   <text x="-13.0303" y="0.30303" id="svg_7" class="st4 st2 st3" transform="matrix(1, 0, 0, 1, 20.74, 53)">MU</text>
+  </g>
+  <polyline id="svg_8" points="4.5060625076293945,58.003031730651855 119.4172134399414,58.003031730651855 119.4172134399414,4.803030490875244 176.21815490722656,4.803030490875244 " class="st5"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_12" y2="34.663635" x2="194.090895" y1="4.36061" x1="176.21211" stroke-width="null" fill="white"/>
+  <rect id="svg_14" height="2.121212" width="14.545452" y="3.754554" x="175.606049" stroke-opacity="null" stroke-width="NaN" stroke="null" fill="#000000"/>
+  <rect id="svg_15" height="0" width="0.30303" y="21.027278" x="236.51513" stroke-opacity="null" stroke-width="NaN" stroke="null" fill="#000000"/>
+ </g>
+</svg>

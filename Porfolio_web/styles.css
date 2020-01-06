@@ -120,7 +120,6 @@ p {
      text-indent: -9999999px;
      background-size: 500px;
      background-repeat: no-repeat;
-
  }
 
  .logo_text {
@@ -137,6 +136,10 @@ figcaption{
 .portfolio_image {
     max-width:90%;
     height:375px;
+}
+.portfolio_image:hover {
+    background: #FFDDDD;
+    border-radius: 25px;
 }
 .theme_list {
     list-style-type: none;
@@ -161,10 +164,34 @@ figcaption{
 .theme:hover {
     height: 200px;
 }
+.column {
+	float: left;
+	width: 49%;
+}
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
+
+.myPicture {
+	display: flex;
+  	justify-content: center;
+	margin-top: 40px;
+
+}
+
+.myText {
+	padding-bottom: 50px;
+	float: right;
+}
+
+@media only screen and (max-width: 800px) {
+  .myText {
+	  float: none;
+  }
+}
+
+
 
 

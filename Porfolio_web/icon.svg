@@ -15,10 +15,10 @@
 	<path class="st0" d="M70.8,61.5"/>
 </g>
 <g>
-	<text transform="matrix(1 0 0 1 114.74 53)" class="st1 st2 st3">TI</text>
-	<text transform="matrix(1 0 0 1 114.74 53)" class="st4 st2 st3">TI</text>
+	<text transform="matrix(1 0 0 1 134.74 53)" class="st1 st2 st3">TI</text>
+	<text transform="matrix(1 0 0 1 134.74 53)" class="st4 st2 st3">TI</text>
 	<text transform="matrix(1 0 0 1 20.74 53)" class="st1 st2 st3">MU</text>
 	<text transform="matrix(1 0 0 1 20.74 53)" class="st4 st2 st3">MU</text>
 </g>
-<polyline class="st5" points="13.9,57.7 100,57.7 100,8.5 184.4,8.5 "/>
+<polyline class="st5" points="13.9,57.7 128,57.7 128,4.5 184.4,4.5 "/>
 </svg>
