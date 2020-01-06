@@ -1,2 +1,2 @@
 # Portfolio
-All required portfolio assignments 
+All required portfolio assignments and my personal webpage.
