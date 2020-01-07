@@ -127,6 +127,7 @@
 
  .logo_text {
      position: relative;
+     display: inline-block;
      top: 50px;
      z-index: 2;
      color: black;
@@ -165,7 +166,7 @@
  }
 
  .theme:hover {
-     height: 430px;
+     height: 470px;
  }
 
  .column {

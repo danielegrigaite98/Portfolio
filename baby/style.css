@@ -1,0 +1,53 @@
+/*
+.baby {
+    position:absolute;
+    bottom:0px;
+    top: 0px;
+    left: auto;
+    right:auto;
+    height: 900px;
+    width: 840px;
+    background-size: auto 100%;
+    background-image: url('KEA/character-01-01.svg');
+    animation: vawing 5s infinite steps(6);
+}
+.scene {
+    height:100vh;
+    width:100vw;
+    background: url(KEA/background-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 100%;
+    
+}
+
+@keyframes wave {
+    to {
+        background-position: 500px
+    }
+}
+*/
+
+.scene{
+    height: 100vh;
+    width: 100vw;
+    background: url(background-01.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: cover;
+}
+.baby {
+    display: block;
+    width: 453.6px;
+    height: 434px;
+    background-image: url(character-01-test-0111-01.svg);
+    animation: walk 3s steps(5) infinite;
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+}
+@keyframes walk {
+    to {
+        background-position: 2268px;
+    }
+}
