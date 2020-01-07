@@ -163,10 +163,12 @@
      transition: height 0.5s;
      -webkit-transition: height 0.5s;
      overflow: hidden;
+     margin-bottom: 20px;
  }
 
  .theme:hover {
      height: 470px;
+     
  }
 
  .column {
@@ -242,4 +244,13 @@
  }
 .theme3_text{
     font-size: 17px;
+}
+.web {
+    border-color: blueviolet;
+}
+.ux {
+    border-color: #E97DFF;
+}
+.anim {
+    border-color:#E866B8;
 }
